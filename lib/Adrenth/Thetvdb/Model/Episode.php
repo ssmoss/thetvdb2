@@ -17,7 +17,9 @@ use Adrenth\Thetvdb\Exception\InvalidArgumentException;
  *
  * @method int getId()
  * @method int getAiredSeason()
+ * @method int setAiredSeason(int $season)
  * @method int getAiredEpisodeNumber()
+ * @method int setAiredEpisodeNumber(int $episode)
  * @method string getEpisodeName()
  * @method string getFirstAired()
  * @method array getGuestStars()
