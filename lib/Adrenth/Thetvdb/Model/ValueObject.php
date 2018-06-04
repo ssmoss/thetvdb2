@@ -47,6 +47,10 @@ abstract class ValueObject
             throw InvalidArgumentException::noValueForAttribute($attribute, get_class($this));
         }
 
+        if (count($arguments) == 1) {
+            $this->values[$attribute] = $arguments[0];
+        }
+        
         return $this->values[$attribute];
     }
 
